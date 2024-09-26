@@ -62,6 +62,6 @@ jobs:
         name: ${{ steps.versions.outputs.name }}
         tag_name: ${{ steps.versions.outputs.tag }}
         files: |
-           "turnip_workdir/${{ steps.versions.outputs.filename }}.zip"
-           "turnip_workdir/${{ steps.versions.outputs.filename }}turnip_adrenotools.zip"
+           turnip_workdir/${{ steps.versions.outputs.filename }}.zip
+           turnip_workdir/${{ steps.versions.outputs.filename }}turnip_adrenotools.zip
            
