@@ -48,6 +48,7 @@ run_all(){
 		prepare_workdir "patched"
 		build_lib_for_android
 		port_lib_for_adrenotool "patched"
+                port_lib_for_adrenotools
 	fi
 
 }
