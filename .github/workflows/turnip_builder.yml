@@ -53,6 +53,7 @@ jobs:
         files: |
            turnip_workdir/${{ steps.versions.outputs.filename }}.zip
            turnip_workdir/${{ steps.versions.outputs.filename }}_patched.zip
+           turnip_workdir/${{ steps.versions.outputs.filename }}turnip_adrenotools.zip
 
     - name: Release "turnip" without patched
       if: ${{ contains(steps.versions.outputs.patched, 'false') }}
@@ -62,6 +63,5 @@ jobs:
         name: ${{ steps.versions.outputs.name }}
         tag_name: ${{ steps.versions.outputs.tag }}
         files: |
-           turnip_workdir/${{ steps.versions.outputs.filename }}.zip
-           turnip_workdir/${{ steps.versions.outputs.filename }}turnip_adrenotools.zip
+           "turnip_workdir/${{ steps.versions.outputs.filename }}.zip"
            
